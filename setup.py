@@ -102,7 +102,7 @@ class Ui_MainWindow(object):
 
 
 if sys.platform in ['win32', 'MSYS2', 'cygwin']:
-    main_path = f'{os.environ["USERPROFILE"]}\\ProgramFiles\\Quark\\'
+    main_path = f'{os.environ["USERPROFILE"]}\\AppData\\Local\\Quark\\'
     chats = main_path + 'Chats\\'
 else:
     main_path = f'/home/{os.environ["USER"]}/Quark/'
