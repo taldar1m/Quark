@@ -14,7 +14,7 @@ Then edit the config and run MainService.py. Now you can share your registration
 ```
 git clone https://github.com/taldar1m/Quark && cd Quark && python setup.py
 ```
-You can also download binary file of the main client in the releases tab.
+You can also download binary files of setup and main client in the releases tab.
 If you don't have an account on the server, you will be registered automatically. Authentification code is reg_code from the server config. Administrator needs to provide it to all clients. Encryption passphrase is a password that will be used to encrypt local files.<br>
 ![decrypt](https://github.com/user-attachments/assets/91cd07ef-1bc7-4907-bfb9-36f8124d7278)
 <br>To create new chat room, press "add new chat" and leave the "room key" field blank. To enter existing room, press "add new chat" and enter room key provided to you by the room's member.
