@@ -386,7 +386,8 @@ class Ui_MainWindow(object):
             message = self.textEdit.toPlainText()
             if message == '':
                 return
-            message = message[:-1]
+            if message.endswith('\n'):
+                message = message[:-1]
             s.send(aes_encrypt(current_key, message.encode()))
             self.textEdit.setPlainText('')
         except:
@@ -539,7 +540,7 @@ class Ui_MainWindow(object):
 
 
 if sys.platform in ['win32', 'MSYS2', 'cygwin']:
-    main_path = f'{os.environ["USERPROFILE"]}\\AppData\\Local\\Quark\\'
+    main_path = f'{os.environ["USERPROFILE"]}\\ProgramFiles\\Quark\\'
     chats = main_path + 'Chats\\'
 else:
     main_path = f'/home/{os.environ["USER"]}/Quark/'
